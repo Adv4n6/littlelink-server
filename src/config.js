@@ -16,6 +16,7 @@ export const runtimeConfig =
         THEME: window?.env?.THEME,
         FAVICON_URL: window?.env?.FAVICON_URL,
         AVATAR_URL: window?.env?.AVATAR_URL,
+        AVATAR_SIZE: window?.env?.AVATAR_SIZE,
         AVATAR_ALT: window?.env?.AVATAR_ALT,
         AVATAR_2X_URL: window?.env?.AVATAR_2X_URL,
         NAME: window?.env?.NAME,
@@ -56,11 +57,13 @@ export const runtimeConfig =
         FOOTER: window?.env?.FOOTER,
         WHATSAPP: window?.env?.WHATSAPP,
         STRAVA: window?.env?.STRAVA,
+        BLUESKY: window?.env?.BLUESKY,
         BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
         GITLAB: window?.env?.GITLAB,
         PATREON: window?.env?.PATREON,
         DEVTO: window?.env?.DEVTO,
         UMAMI_APP_URL: window?.env?.UMAMI_APP_URL,
+        UMAMI_SCRIPT_NAME: window?.env?.UMAMI_SCRIPT_NAME,
         BUTTON_ORDER: window?.env?.BUTTON_ORDER,
         PAYPAL: window?.env?.PAYPAL,
         SLACK: window?.env?.SLACK,
@@ -124,10 +127,28 @@ export const runtimeConfig =
         MYANIMELIST: window?.env?.MYANIMELIST,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
+        PLAUSIBLE_URL: window?.env?.PLAUSIBLE_URL,
+        PLAUSIBLE_DATA_API: window?.env?.PLAUSIBLE_DATA_API,
+        PLAUSIBLE_DATA_DOMAIN: window?.env?.PLAUSIBLE_DATA_DOMAIN,
         SHARE: window?.env?.SHARE,
         DROP_SHADOW: window?.env?.DROP_SHADOW,
         FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
         JETPHOTOS: window?.env?.JETPHOTOS,
+        THEME_OS: window?.env?.THEME_OS,
+        SUBSTACK: window?.env?.SUBSTACK,
+        PRINTABLES: window?.env?.PRINTABLES,
+        SERIALIZD: window?.env?.SERIALIZD,
+        THREADS: window?.env?.THREADS,
+        LEMMY: window?.env?.LEMMY,
+        PIXELFED: window?.env?.PIXELFED,
+        VRCHAT: window?.env?.VRCHAT,
+        X: window?.env?.X,
+        CODEWARS: window?.env?.CODEWARS,
+        APPLE_PODCASTS: window?.env?.APPLE_PODCASTS,
+        GOOGLE_PODCASTS: window?.env?.GOOGLE_PODCASTS,
+        POCKET_CASTS: window?.env?.POCKET_CASTS,
+        OVERCAST: window?.env?.OVERCAST,
+        RSS: window?.env?.RSS,
       }
     : {
         // server
@@ -163,6 +184,9 @@ export const runtimeConfig =
         AVATAR_URL: nodeIsProduction
           ? process.env.AVATAR_URL
           : process.env.RAZZLE_AVATAR_URL,
+        AVATAR_SIZE: nodeIsProduction
+          ? process.env.AVATAR_SIZE
+          : process.env.RAZZLE_AVATAR_SIZE,
         AVATAR_ALT: nodeIsProduction
           ? process.env.AVATAR_ALT
           : process.env.RAZZLE_AVATAR_ALT,
@@ -267,6 +291,9 @@ export const runtimeConfig =
         STRAVA: nodeIsProduction
           ? process.env.STRAVA
           : process.env.RAZZLE_STRAVA,
+        BLUESKY: nodeIsProduction
+          ? process.env.BLUESKY
+          : process.env.RAZZLE_BLUESKY,
         BUYMEACOFFEE: nodeIsProduction
           ? process.env.BUYMEACOFFEE
           : process.env.RAZZLE_BUYMEACOFFEE,
@@ -280,6 +307,9 @@ export const runtimeConfig =
         UMAMI_APP_URL: nodeIsProduction
           ? process.env.UMAMI_APP_URL
           : process.env.RAZZLE_UMAMI_APP_URL,
+        UMAMI_SCRIPT_NAME: nodeIsProduction
+          ? process.env.UMAMI_SCRIPT_NAME
+          : process.env.RAZZLE_UMAMI_SCRIPT_NAME,
         BUTTON_ORDER: nodeIsProduction
           ? process.env.BUTTON_ORDER
           : process.env.RAZZLE_BUTTON_ORDER,
@@ -449,6 +479,15 @@ export const runtimeConfig =
         MATOMO_SITE_ID: nodeIsProduction
           ? process.env.MATOMO_SITE_ID
           : process.env.RAZZLE_MATOMO_SITE_ID,
+        PLAUSIBLE_URL: nodeIsProduction
+          ? process.env.PLAUSIBLE_URL
+          : process.env.RAZZLE_PLAUSIBLE_URL,
+        PLAUSIBLE_DATA_API: nodeIsProduction
+          ? process.env.PLAUSIBLE_DATA_API
+          : process.env.RAZZLE_PLAUSIBLE_DATA_API,
+        PLAUSIBLE_DATA_DOMAIN: nodeIsProduction
+          ? process.env.PLAUSIBLE_DATA_DOMAIN
+          : process.env.RAZZLE_PLAUSIBLE_DATA_DOMAIN,
         SHARE: nodeIsProduction ? process.env.SHARE : process.env.RAZZLE_SHARE,
         DROP_SHADOW: nodeIsProduction
           ? process.env.DROP_SHADOW
@@ -459,4 +498,43 @@ export const runtimeConfig =
         JETPHOTOS: nodeIsProduction
           ? process.env.JETPHOTOS
           : process.env.RAZZLE_JETPHOTOS,
+        THEME_OS: nodeIsProduction
+          ? process.env.THEME_OS
+          : process.env.RAZZLE_THEME_OS,
+        SUBSTACK: nodeIsProduction
+          ? process.env.SUBSTACK
+          : process.env.RAZZLE_SUBSTACK,
+        PRINTABLES: nodeIsProduction
+          ? process.env.PRINTABLES
+          : process.env.RAZZLE_PRINTABLES,
+        SERIALIZD: nodeIsProduction
+          ? process.env.SERIALIZD
+          : process.env.RAZZLE_SERIALIZD,
+        THREADS: nodeIsProduction
+          ? process.env.THREADS
+          : process.env.RAZZLE_THREADS,
+        LEMMY: nodeIsProduction ? process.env.LEMMY : process.env.RAZZLE_LEMMY,
+        PIXELFED: nodeIsProduction
+          ? process.env.PIXELFED
+          : process.env.RAZZLE_PIXELFED,
+        VRCHAT: nodeIsProduction
+          ? process.env.VRCHAT
+          : process.env.RAZZLE_VRCHAT,
+        X: nodeIsProduction ? process.env.X : process.env.RAZZLE_X,
+        CODEWARS: nodeIsProduction
+          ? process.env.CODEWARS
+          : process.env.RAZZLE_CODEWARS,
+        APPLE_PODCASTS: nodeIsProduction
+          ? process.env.APPLE_PODCASTS
+          : process.env.RAZZLE_APPLE_PODCASTS,
+        GOOGLE_PODCASTS: nodeIsProduction
+          ? process.env.GOOGLE_PODCASTS
+          : process.env.RAZZLE_GOOGLE_PODCASTS,
+        POCKET_CASTS: nodeIsProduction
+          ? process.env.POCKET_CASTS
+          : process.env.RAZZLE_POCKET_CASTS,
+        OVERCAST: nodeIsProduction
+          ? process.env.OVERCAST
+          : process.env.RAZZLE_OVERCAST,
+        RSS: nodeIsProduction ? process.env.RSS : process.env.RAZZLE_RSS,
       };

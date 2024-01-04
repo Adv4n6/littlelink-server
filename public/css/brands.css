@@ -268,6 +268,17 @@ button {
   background-color: #fd5000;
 }
 
+/* Bluesky */
+.button.button-bluesky {
+  color: #000000;
+  background-color: #F3F9FF;
+  border: 1px solid #212121;
+}
+.button.button-bluesky:hover,
+.button.button-bluesky:focus {
+  filter: brightness(90%);
+}
+
 /* Buy Me a Coffee */
 .button.button-buymeacoffee {
   color: #000000;
@@ -310,6 +321,7 @@ button {
   background-color: #f8f9f9;
   font-weight: 100;
 }
+
 .button.button-stackoverflow:after {
   content: "overflow";
   font-weight: 700;
@@ -537,4 +549,104 @@ button {
 .button.button-jetphotos {
   color: #ffffff;
   background-color: #000000;
+}
+
+/* substack */
+.button.button-substack {
+  color: #000;
+  background-color: #fff;
+}
+
+/* printables */
+.button.button-printables {
+  color: #000;
+  background-color: #eb5405;
+}
+
+/* serializd */
+.button.button-serializd {
+  color: #57c2ad;
+  background-color: #0a0c0e;
+}
+
+/* threads */
+.button.button-threads {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* lemmy */
+.button.button-lemmy {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* pixelfed */
+.button.button-pixelfed {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* vrchat */
+.button.button-vrchat {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* X */
+.button.button-x {
+  color: #000000;
+  background-color: #000000;
+}
+
+/* Codewars */
+.button.button-codewars {
+  color: #df605c;
+  background-color: #222327;
+}
+
+/* Apple Podcasts */
+.button.button-apple-podcasts {
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+}
+.button.button-apple-podcasts:hover,
+.button.button-apple-podcasts:focus {
+  filter: brightness(90%);
+}
+
+/* Google Podcasts */
+.button.button-google-podcasts {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #212121;
+}
+.button.button-google-podcasts:hover,
+.button.button-google-podcasts:focus {
+  filter: brightness(90%);
+}
+
+/* Pocket Casts */
+.button.button-pocket-casts {
+  color: #000000;
+  border-style: solid;
+  border-color: #b8c3c9;
+  border-width: 1px;
+  background-color: #ffffff;
+}
+
+/* Overcast */
+.button.button-overcast {
+  color: #000000;
+  border-style: solid;
+  border-color: #b8c3c9;
+  border-width: 1px;
+  background-color: #ffffff;
+}
+
+/* RSS */
+.button.button-rss {
+  color: #ffffff;
+  background-color: #FF9800;
 }
