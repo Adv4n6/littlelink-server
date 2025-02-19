@@ -149,6 +149,25 @@ export const runtimeConfig =
         POCKET_CASTS: window?.env?.POCKET_CASTS,
         OVERCAST: window?.env?.OVERCAST,
         RSS: window?.env?.RSS,
+        AUDIUS: window?.env?.AUDIUS,
+        BANDCAMP: window?.env?.BANDCAMP,
+        FORGEJO: window?.env?.FORGEJO,
+        ORCID: window?.env?.ORCID,
+        CREDLY: window?.env?.CREDLY,
+        SEMANTICSCHOLAR: window?.env?.SEMANTICSCHOLAR,
+        GOOGLESCHOLAR: window?.env?.GOOGLESCHOLAR,
+        SIMPLEX: window?.env?.SIMPLEX,
+        MIXCLOUD: window?.env?.MIXCLOUD,
+        INTERNETARCHIVE: window?.env?.INTERNETARCHIVE,
+        GOOGLEMAPS: window?.env?.GOOGLEMAPS,
+        TIDAL: window?.env?.TIDAL,
+        THESTORYGRAPH: window?.env?.THESTORYGRAPH,
+        GEOCACHING: window?.env?.GEOCACHING,
+        NEOCITIES: window?.env?.NEOCITIES,
+        DREAMWIDTH: window?.env?.DREAMWIDTH,
+        SPACEHEY: window?.env?.SPACEHEY,
+        VIBER: window?.env?.VIBER,
+        PILLOWFORT: window?.env?.PILLOWFORT,
       }
     : {
         // server
@@ -537,4 +556,55 @@ export const runtimeConfig =
           ? process.env.OVERCAST
           : process.env.RAZZLE_OVERCAST,
         RSS: nodeIsProduction ? process.env.RSS : process.env.RAZZLE_RSS,
+        AUDIUS: nodeIsProduction
+          ? process.env.AUDIUS
+          : process.env.RAZZLE_AUDIUS,
+        BANDCAMP: nodeIsProduction
+          ? process.env.BANDCAMP
+          : process.env.RAZZLE_BANDCAMP,
+        FORGEJO: nodeIsProduction
+          ? process.env.FORGEJO
+          : process.env.RAZZLE_FORGEJO,
+        ORCID: nodeIsProduction ? process.env.ORCID : process.env.RAZZLE_ORCID,
+        CREDLY: nodeIsProduction
+          ? process.env.CREDLY
+          : process.env.RAZZLE_CREDLY,
+        SEMANTICSCHOLAR: nodeIsProduction
+          ? process.env.SEMANTICSCHOLAR
+          : process.env.RAZZLE_SEMANTICSCHOLAR,
+        GOOGLESCHOLAR: nodeIsProduction
+          ? process.env.GOOGLESCHOLAR
+          : process.env.RAZZLE_GOOGLESCHOLAR,
+        SIMPLEX: nodeIsProduction
+          ? process.env.SIMPLEX
+          : process.env.RAZZLE_SIMPLEX,
+        MIXCLOUD: nodeIsProduction
+          ? process.env.MIXCLOUD
+          : process.env.RAZZLE_MIXCLOUD,
+        INTERNETARCHIVE: nodeIsProduction
+          ? process.env.INTERNETARCHIVE
+          : process.env.RAZZLE_INTERNETARCHIVE,
+        GOOGLEMAPS: nodeIsProduction
+          ? process.env.GOOGLEMAPS
+          : process.env.RAZZLE_GOOGLEMAPS,
+        TIDAL: nodeIsProduction ? process.env.TIDAL : process.env.RAZZLE_TIDAL,
+        THESTORYGRAPH: nodeIsProduction
+          ? process.env.THESTORYGRAPH
+          : process.env.RAZZLE_THESTORYGRAPH,
+        GEOCACHING: nodeIsProduction
+          ? process.env.GEOCACHING
+          : process.env.RAZZLE_GEOCACHING,
+        NEOCITIES: nodeIsProduction
+          ? process.env.NEOCITIES
+          : process.env.RAZZLE_NEOCITIES,
+        DREAMWIDTH: nodeIsProduction
+          ? process.env.DREAMWIDTH
+          : process.env.RAZZLE_DREAMWIDTH,
+        SPACEHEY: nodeIsProduction
+          ? process.env.SPACEHEY
+          : process.env.RAZZLE_SPACEHEY,
+        VIBER: nodeIsProduction ? process.env.VIBER : process.env.RAZZLE_VIBER,
+        PILLOWFORT: nodeIsProduction
+          ? process.env.PILLOWFORT
+          : process.env.RAZZLE_PILLOWFORT,
       };
